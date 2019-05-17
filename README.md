@@ -1,4 +1,4 @@
-# spa-notes
+# Notes - A Single Page Web App
 
 ### User Stories
 
