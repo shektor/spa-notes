@@ -1,23 +1,21 @@
-(function(exports) {
-  function testNoteModel() {
-    function itTakesTextParameter() {
-      var text = "My favourite language is JavaScript";
-      var note = new Note(text);
+function testNoteModel() {
+  function itTakesTextParameter() {
+    var text = "My favourite language is JavaScript";
+    var note = new Note(text);
 
-      assert.isTrue(note._text === text);
-    }
-    console.log("itTakesTextParameter");
-    itTakesTextParameter();
-
-    function itReturnsText() {
-      var text = "My favourite language is not JavaScript";
-      var note = new Note(text);
-
-      assert.isTrue(note.text() === text);
-    }
-    console.log("itReturnsText");
-    itReturnsText();
+    assert.isTrue(note._text === text);
   }
-  console.warn("testNoteModel");
-  testNoteModel();
-})(this);
+  console.log("itTakesTextParameter");
+  itTakesTextParameter();
+
+  function itReturnsText() {
+    var text = "My favourite language is not JavaScript";
+    var note = new Note(text);
+
+    assert.isTrue(note.text() === text);
+  }
+  console.log("itReturnsText");
+  itReturnsText();
+}
+console.warn("testNoteModel");
+testNoteModel();
