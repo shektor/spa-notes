@@ -1,7 +1,5 @@
 (function(exports) {
   function testNoteListModel() {
-    console.warn("testNoteListModel");
-
     function returnsAllNotes() {
       var noteList = new NoteList();
 
@@ -30,5 +28,6 @@
     console.log("itAddsAndStoresNotes");
     itAddsAndStoresNotes();
   }
+  console.warn("testNoteListModel");
   testNoteListModel();
 })(this);
