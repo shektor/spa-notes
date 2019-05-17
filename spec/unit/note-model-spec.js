@@ -1,5 +1,7 @@
 (function(exports) {
   function testNoteModel() {
+    console.warn("testNoteModel");
+
     function itTakesTextParameter() {
       var text = "My favourite language is JavaScript";
       var note = new Note(text);
